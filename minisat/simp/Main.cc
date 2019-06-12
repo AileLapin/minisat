@@ -17,6 +17,7 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FO
 DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 **************************************************************************************************/
+#include <iostream>
 
 #include <errno.h>
 #include <zlib.h>
@@ -53,6 +54,8 @@ static void SIGINT_exit(int) {
 
 int main(int argc, char** argv)
 {
+    printf("IGAAAAAAAAAAAAAAAAA\n");
+
     try {
         setUsageHelp("USAGE: %s [options] <input-file> <result-output-file>\n\n  where input may be either in plain or gzipped DIMACS.\n");
         setX86FPUPrecision();
@@ -93,6 +96,9 @@ int main(int argc, char** argv)
             printf("ERROR! Could not open file: %s\n", argc == 1 ? "<stdin>" : argv[1]), exit(1);
         
         if (S.verbosity > 0){
+            printf("============================[ Problem Statistics ]=============================\n");
+            printf("============================[ Problem Statistics ]=============================\n");
+            printf("============================[ Problem Statistics ]=============================\n");
             printf("============================[ Problem Statistics ]=============================\n");
             printf("|                                                                             |\n"); }
         
